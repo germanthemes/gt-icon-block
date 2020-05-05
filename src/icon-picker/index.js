@@ -139,7 +139,7 @@ class IconPicker extends Component {
 							icon="info"
 							label={ __( 'Icon', 'gt-blocks' ) }
 						>
-							<Button isLarge onClick={ this.openModal }>
+							<Button isSecondary onClick={ this.openModal }>
 								{ __( 'Select icon', 'gt-blocks' ) }
 							</Button>
 						</Placeholder>

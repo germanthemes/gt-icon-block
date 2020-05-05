@@ -117,8 +117,8 @@ registerBlockType(
 				backgroundColor: backgroundClass ? undefined : customBackgroundColor,
 			};
 
-			const pluginURL = select( 'gt-blocks-store' ).getPluginURL();
-			const svgURL = pluginURL + 'assets/icons/fontawesome.svg#' + icon;
+			/* global GermanThemesIconBlock */
+			const svgURL = GermanThemesIconBlock.pluginURL + 'assets/icons/fontawesome.svg#' + icon;
 			const svgClasses = classnames( 'icon', `icon-${ icon }` );
 
 			return (

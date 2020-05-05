@@ -7,9 +7,7 @@ import classnames from 'classnames';
  * WordPress dependencies
  */
 const { Component, Fragment } = wp.element;
-const { compose } = wp.compose;
 const { __ } = wp.i18n;
-const { withSelect } = wp.data;
 const { PlainText } = wp.editor;
 
 const {
@@ -103,9 +101,8 @@ class IconPicker extends Component {
 	}
 
 	displayIcon( icon, iconSize = 32 ) {
-		const { pluginURL } = this.props;
-
-		const svgURL = pluginURL + 'assets/icons/fontawesome.svg#' + icon;
+		/* global GermanThemesIconBlock */
+		const svgURL = GermanThemesIconBlock.pluginURL + 'assets/icons/fontawesome.svg#' + icon;
 		const svgClass = classnames( 'icon', `icon-${ icon }` );
 		const svgStyles = {
 			width: iconSize !== 32 ? iconSize + 'px' : undefined,
@@ -222,10 +219,4 @@ class IconPicker extends Component {
 	}
 }
 
-export default compose( [
-	withSelect( ( select ) => {
-		const pluginURL = select( 'gt-blocks-store' ).getPluginURL();
-
-		return { pluginURL };
-	} ),
-] )( IconPicker );
+export default IconPicker;

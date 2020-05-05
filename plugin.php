@@ -72,6 +72,12 @@ class GermanThemes_Icon_Block {
 			'20200403'
 		);
 
+		// Make Plugin URL available in gt-icon-block.js.
+		$gt_icon_block_l10n = array(
+			'pluginURL' => plugin_dir_url( __FILE__ ),
+		);
+		wp_localize_script( 'gt-icon-block', 'GermanThemesIconBlock', $gt_icon_block_l10n );
+
 		// Enqueue Editor Stylesheet for GT Icon Block.
 		wp_enqueue_style(
 			'gt-icon-block-editor',

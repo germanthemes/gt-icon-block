@@ -1,4 +1,4 @@
 /**
  * Import Block
  */
-import './block/index.js';
+import './icon-block/index.js';

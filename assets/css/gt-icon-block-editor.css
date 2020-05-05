@@ -7,6 +7,8 @@
   .gt-blocks-icon-picker-modal .gt-icon-picker-title {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+        align-items: center;
     font-size: 1rem;
     font-weight: bold; }
     .gt-blocks-icon-picker-modal .gt-icon-picker-title .gt-remove-icon {
@@ -26,6 +28,7 @@
     .gt-blocks-icon-picker-modal .gt-icon-picker-list .gt-icon-picker-grid .gt-icon-link {
       display: block;
       padding: 0;
+      height: auto;
       background: #f0f0f0;
       text-align: center; }
       .gt-blocks-icon-picker-modal .gt-icon-picker-list .gt-icon-picker-grid .gt-icon-link:hover, .gt-blocks-icon-picker-modal .gt-icon-picker-list .gt-icon-picker-grid .gt-icon-link:active {
@@ -50,13 +53,12 @@
   color: inherit;
   padding: 0;
   width: 100%;
+  height: auto;
   text-align: inherit;
   font-size: inherit; }
   .gt-icon-placeholder-wrapper .gt-show-icon-picker .gt-icon-svg .icon {
     pointer-events: none; }
-  .gt-icon-placeholder-wrapper .gt-show-icon-picker:not(:disabled):not([aria-disabled=true]):focus {
+  .gt-icon-placeholder-wrapper .gt-show-icon-picker:not(:disabled):not([aria-disabled=true]):not(.is-secondary):not(.is-primary):not(.is-tertiary):not(.is-link):hover, .gt-icon-placeholder-wrapper .gt-show-icon-picker:not(:disabled):not([aria-disabled=true]):focus {
     background-color: inherit;
     color: inherit;
-    -webkit-box-shadow: none;
-            box-shadow: none;
     outline: none; }

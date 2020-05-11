@@ -117,59 +117,59 @@ class IconEdit extends Component {
 
 				<InspectorControls key="inspector">
 
-					<PanelBody title={ __( 'Icon Settings', 'gt-blocks' ) } initialOpen={ true } className="gt-panel-icon-settings gt-panel">
+					<PanelBody title={ __( 'Icon Settings', 'gt-icon-block' ) } initialOpen={ true } className="gt-panel-icon-settings gt-panel">
 
 						<SelectControl
-							label={ __( 'Icon Style', 'gt-blocks' ) }
+							label={ __( 'Icon Style', 'gt-icon-block' ) }
 							value={ iconLayout }
 							onChange={ ( newStyle ) => setAttributes( { iconLayout: newStyle } ) }
 							options={ [
-								{ value: 'default', label: __( 'Default', 'gt-blocks' ) },
-								{ value: 'circular', label: __( 'Circular', 'gt-blocks' ) },
-								{ value: 'outline', label: __( 'Outline', 'gt-blocks' ) },
-								{ value: 'square', label: __( 'Square', 'gt-blocks' ) },
-								{ value: 'rounded', label: __( 'Rounded', 'gt-blocks' ) },
-								{ value: 'full', label: __( 'Full', 'gt-blocks' ) },
+								{ value: 'default', label: __( 'Default', 'gt-icon-block' ) },
+								{ value: 'circular', label: __( 'Circular', 'gt-icon-block' ) },
+								{ value: 'outline', label: __( 'Outline', 'gt-icon-block' ) },
+								{ value: 'square', label: __( 'Square', 'gt-icon-block' ) },
+								{ value: 'rounded', label: __( 'Rounded', 'gt-icon-block' ) },
+								{ value: 'full', label: __( 'Full', 'gt-icon-block' ) },
 							] }
 						/>
 
 						<SelectControl
-							label={ __( 'Icon Size', 'gt-blocks' ) }
+							label={ __( 'Icon Size', 'gt-icon-block' ) }
 							value={ iconSize }
 							onChange={ ( newSize ) => setAttributes( { iconSize: newSize } ) }
 							options={ [
-								{ value: 'small', label: __( 'Small', 'gt-blocks' ) },
-								{ value: 'normal', label: __( 'Normal', 'gt-blocks' ) },
-								{ value: 'medium', label: __( 'Medium', 'gt-blocks' ) },
-								{ value: 'large', label: __( 'Large', 'gt-blocks' ) },
-								{ value: 'extra-large', label: __( 'Extra Large', 'gt-blocks' ) },
-								{ value: 'huge', label: __( 'Huge', 'gt-blocks' ) },
+								{ value: 'small', label: __( 'Small', 'gt-icon-block' ) },
+								{ value: 'normal', label: __( 'Normal', 'gt-icon-block' ) },
+								{ value: 'medium', label: __( 'Medium', 'gt-icon-block' ) },
+								{ value: 'large', label: __( 'Large', 'gt-icon-block' ) },
+								{ value: 'extra-large', label: __( 'Extra Large', 'gt-icon-block' ) },
+								{ value: 'huge', label: __( 'Huge', 'gt-icon-block' ) },
 							] }
 						/>
 
 						{ iconLayout !== 'default' && (
 							<SelectControl
-								label={ __( 'Icon Padding', 'gt-blocks' ) }
+								label={ __( 'Icon Padding', 'gt-icon-block' ) }
 								value={ iconPadding }
 								onChange={ ( newPadding ) => setAttributes( { iconPadding: newPadding } ) }
 								options={ [
-									{ value: 'small', label: __( 'Small', 'gt-blocks' ) },
-									{ value: 'normal', label: __( 'Normal', 'gt-blocks' ) },
-									{ value: 'medium', label: __( 'Medium', 'gt-blocks' ) },
-									{ value: 'large', label: __( 'Large', 'gt-blocks' ) },
+									{ value: 'small', label: __( 'Small', 'gt-icon-block' ) },
+									{ value: 'normal', label: __( 'Normal', 'gt-icon-block' ) },
+									{ value: 'medium', label: __( 'Medium', 'gt-icon-block' ) },
+									{ value: 'large', label: __( 'Large', 'gt-icon-block' ) },
 								] }
 							/>
 						) }
 
 						{ 'outline' === iconLayout && (
 							<SelectControl
-								label={ __( 'Border Width', 'gt-blocks' ) }
+								label={ __( 'Border Width', 'gt-icon-block' ) }
 								value={ borderWidth }
 								onChange={ ( newWidth ) => setAttributes( { borderWidth: newWidth } ) }
 								options={ [
-									{ value: 'thin', label: __( 'Thin', 'gt-blocks' ) },
-									{ value: 'normal', label: __( 'Normal', 'gt-blocks' ) },
-									{ value: 'thick', label: __( 'Thick', 'gt-blocks' ) },
+									{ value: 'thin', label: __( 'Thin', 'gt-icon-block' ) },
+									{ value: 'normal', label: __( 'Normal', 'gt-icon-block' ) },
+									{ value: 'thick', label: __( 'Thick', 'gt-icon-block' ) },
 								] }
 							/>
 						) }
@@ -177,18 +177,18 @@ class IconEdit extends Component {
 					</PanelBody>
 
 					<PanelColorSettings
-						title={ __( 'Color Settings', 'gt-blocks' ) }
+						title={ __( 'Color Settings', 'gt-icon-block' ) }
 						initialOpen={ false }
 						colorSettings={ [
 							{
 								value: backgroundColor.color,
 								onChange: setBackgroundColor,
-								label: __( 'Background Color', 'gt-blocks' ),
+								label: __( 'Background Color', 'gt-icon-block' ),
 							},
 							{
 								value: textColor.color,
 								onChange: setTextColor,
-								label: __( 'Text Color', 'gt-blocks' ),
+								label: __( 'Text Color', 'gt-icon-block' ),
 							},
 						] }
 					>

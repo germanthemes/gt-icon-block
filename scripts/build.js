@@ -33,9 +33,9 @@ const formatWebpackMessages = require( cgbDevUtilsPath + '/formatWebpackMessages
 
 // Build file paths.
 const theCWD = process.cwd();
-const fileBuildJS = path.resolve( theCWD, './dist/blocks.build.js' );
-const fileEditorCSS = path.resolve( theCWD, './dist/blocks.editor.build.css' );
-const fileStyleCSS = path.resolve( theCWD, './dist/blocks.style.build.css' );
+const fileBuildJS = path.resolve( theCWD, './assets/js/gt-icon-block.js' );
+const fileEditorCSS = path.resolve( theCWD, './assets/css/gt-icon-block-editor.css' );
+const fileStyleCSS = path.resolve( theCWD, './assets/css/gt-icon-block.css' );
 
 /**
  * Get File Size
